@@ -1,5 +1,4 @@
 #include "editor.h"
-
 #include <iostream>
 
 void test_equals(Editor::size_type x, Editor::size_type y)
@@ -11,7 +10,7 @@ void test_equals(Editor::size_type x, Editor::size_type y)
 int main() {
 	Editor ed("...(...(...[...]...)...)...{...}...");
 
-    std::cout << "editor.size(): " << ed.get_size() << std::endl;
+    std::cout << "editorsize: " << ed.get_size() << std::endl;
 
 	test_equals( ed.find_left_par(15), 11);
 	test_equals( ed.find_left_par(19), 7);
